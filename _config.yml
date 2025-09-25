@@ -1,0 +1,14 @@
+title: HarperPages
+description: Books by Jack Harper
+baseurl: "" # keep empty when using project root
+url: "https://yourusername.github.io" # replace with your username URL now; your custom domain later
+
+# Collections
+collections:
+  books:
+    output: true
+    permalink: /books/:title/
+
+# Build settings
+markdown: kramdown
+theme: minima # temporary; we’ll override with custom layouts
