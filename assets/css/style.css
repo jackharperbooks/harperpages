@@ -1,0 +1,25 @@
+.parallax {
+  background-image: url('../images/hero.jpg'); /* replace with your chosen image */
+  height: 100vh; /* full screen height */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.5); /* translucent overlay for readability */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.intro {
+  padding: 3rem 2rem;
+  background: var(--bg);
+  color: var(--fg);
+}
