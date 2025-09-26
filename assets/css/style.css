@@ -358,7 +358,7 @@ h3 {
 }
 
 .faq-section details[open] {
-  max-height: 1000px; /* large enough to fit expanded content */
+  max-height: 3000px; /* large enough to fit expanded content */
   padding-bottom: 0.5rem;
 }
 
