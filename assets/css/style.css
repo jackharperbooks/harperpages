@@ -94,7 +94,6 @@ h3 {
    PARALLAX HERO
    =========================== */
 .parallax {
-  /* background-image: url('../images/hero.jpg');  REMOVE this line */
   height: 100vh; /* full screen height */
   background-attachment: fixed;
   background-position: center;
