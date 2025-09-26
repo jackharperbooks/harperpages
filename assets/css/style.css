@@ -55,3 +55,37 @@
 .download-btn:hover {
   background: #5a85e6;
 }
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.book-card {
+  background: #1a1a1d;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.book-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.book-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
