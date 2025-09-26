@@ -285,3 +285,33 @@ button:hover {
   border-radius: 50%;
   line-height: 1;
 }
+
+/* ===========================
+   FOOTER STYLING
+   =========================== */
+.site-footer {
+  background: rgba(15, 15, 17, 0.8); /* translucent like header */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-logo {
+  max-height: 50px;
+  margin-bottom: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
