@@ -27,7 +27,7 @@
 
   <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
 
-  <!-- Age Gate Script -->
+<!-- Age Gate Script -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const ageGate = document.getElementById("age-gate");
@@ -43,20 +43,24 @@
       ageGate.style.display = "none";
     });
 
-    noBtn.addEventListener("click", function() {
-  // Clear any stored flag so the modal always shows again
-  localStorage.removeItem("ageConfirmed");
+    noBtn.addEventListener("click", function(e) {
+      e.preventDefault(); // stop any default button behavior
 
-  // Fade out overlay
-  ageGate.style.opacity = "0";
+      // Clear any stored flag so the modal always shows again
+      localStorage.removeItem("ageConfirmed");
 
-  // After 300ms, hide completely and redirect
-  setTimeout(function() {
-    ageGate.style.display = "none";
-    window.location.href = "{{ '/oops.html' | relative_url }}";
-  }, 300);
-});
+      // Fade out overlay
+      ageGate.style.opacity = "0";
+
+      // After 300ms, hide completely and redirect
+      setTimeout(function() {
+        ageGate.style.display = "none";
+        window.location.replace("{{ '/oops.html' | relative_url }}");
+      }, 300);
+    });
+  }); // <-- closes the DOMContentLoaded callback
 </script>
+
 
 
   
