@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+</head>
+<body>
+  {% include header.html %}
+  <main>
+
+    <!-- Parallax Hero -->
+    <section class="parallax" style="background-image: url('{{ page.hero | relative_url }}');">
+      <div class="hero-text">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.tagline }}</p>
+      </div>
+    </section>
+
+    <!-- Book Content -->
+    <section class="book-content">
+      <img src="{{ page.cover | relative_url }}" alt="{{ page.title }} cover" class="book-cover">
+      <div class="book-blurb">
+        {{ content }}
+        <p><a class="download-btn" href="{{ page.epub | relative_url }}">📖 Get My Copy (.epub)</a></p>
+      </div>
+    </section>
+
+  </main>
+  {% include footer.html %}
+</body>
+</html>
