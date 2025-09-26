@@ -230,10 +230,25 @@ h3 {
 /* ===========================
    HEADER NAVIGATION BUTTONS
    =========================== */
+.site-header {
+  display: flex;
+  flex-direction: column; /* stack logo above nav */
+  align-items: center;    /* center everything horizontally */
+  padding: 1rem 0;
+}
+
+.logo {
+  max-height: 60px; /* placeholder logo size */
+  margin-bottom: 1rem;
+}
+
 .nav-buttons {
   display: flex;
   gap: 1rem;
+  justify-content: center; /* center the buttons */
+  flex-wrap: wrap;         /* wrap nicely on smaller screens */
 }
+
 .nav-btn {
   padding: 0.6rem 1.2rem;
   background: var(--accent);
@@ -243,6 +258,7 @@ h3 {
   font-weight: 600;
   transition: all 0.2s ease;
 }
+
 .nav-btn:hover {
   background: var(--accent-hover);
   transform: translateY(-2px);
