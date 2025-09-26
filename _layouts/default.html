@@ -25,27 +25,31 @@
   </div>
 </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const ageGate = document.getElementById("age-gate");
-    const yesBtn = document.getElementById("age-yes");
-    const noBtn = document.getElementById("age-no");
+  {% include footer.html %}
+  <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
 
-    // Only show if not already confirmed
-    if (!localStorage.getItem("ageConfirmed")) {
-      ageGate.style.display = "flex";
-    }
+  <!-- Age Gate Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const ageGate = document.getElementById("age-gate");
+      const yesBtn = document.getElementById("age-yes");
+      const noBtn = document.getElementById("age-no");
 
-    yesBtn.addEventListener("click", function() {
-      localStorage.setItem("ageConfirmed", "true");
-      ageGate.style.display = "none";
+      if (!localStorage.getItem("ageConfirmed")) {
+        ageGate.style.display = "flex";
+      }
+
+      yesBtn.addEventListener("click", function() {
+        localStorage.setItem("ageConfirmed", "true");
+        ageGate.style.display = "none";
+      });
+
+      noBtn.addEventListener("click", function() {
+        ageGate.style.display = "none"; // hide overlay immediately
+        window.location.href = "{{ '/oops.html' | relative_url }}";
+      });
     });
-
-    noBtn.addEventListener("click", function() {
-      window.location.href = "{{ '/oops.html' | relative_url }}";
-    });
-  });
-</script>
+  </script>
 
   
 </body>
