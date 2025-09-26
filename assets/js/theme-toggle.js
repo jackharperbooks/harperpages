@@ -54,7 +54,11 @@ function applyTheme(name) {
 applyTheme(current);
 
 // Toggle on button click
-document.getElementById("theme-toggle").addEventListener("click", () => {
-  let next = order[(order.indexOf(current) + 1) % order.length];
-  applyTheme(next);
-});
+const toggle = document.getElementById("theme-toggle");
+if (toggle) {
+  toggle.addEventListener("click", () => {
+    let next = order[(order.indexOf(current) + 1) % order.length];
+    applyTheme(next);
+  });
+}
+
