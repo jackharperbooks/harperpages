@@ -14,3 +14,19 @@ title: HarperPages
   <h2>Welcome</h2>
   <p>Step into my library. Each book is a piece of my journey, shared freely.</p>
 </section>
+
+<section class="featured-book">
+  <h2>Featured Book</h2>
+  {% assign latest = site.books | sort: 'date' | last %}
+  <div class="featured-card">
+    <a href="{{ latest.url | relative_url }}">
+      <img src="{{ latest.cover | relative_url }}" alt="{{ latest.title }} cover">
+      <div class="featured-info">
+        <h3>{{ latest.title }}</h3>
+        <p>{{ latest.tagline }}</p>
+        <p><strong>Read more →</strong></p>
+      </div>
+    </a>
+  </div>
+</section>
+
