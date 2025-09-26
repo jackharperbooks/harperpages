@@ -340,3 +340,49 @@ button:hover {
   font-size: 0.85rem;
   color: var(--muted);
 }
+
+/* ===========================
+   PARALLAX HERO + MOBILE FALLBACK
+   =========================== */
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;   /* desktop parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;             /* needed for overlay */
+}
+
+/* Overlay gradient for readability */
+.parallax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.4),   /* darker at top */
+    rgba(0,0,0,0.4)    /* darker at bottom */
+  );
+  z-index: 0;
+}
+
+/* Ensure hero text sits above overlay */
+.hero-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* Mobile fallback: disable fixed backgrounds */
+@media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll; /* graceful fallback */
+    background-position: center center;
+    background-size: cover;
+  }
+}
