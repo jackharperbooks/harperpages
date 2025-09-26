@@ -45,7 +45,7 @@
 
     noBtn.addEventListener("click", function() {
       ageGate.style.display = "none"; // hide overlay immediately
-      window.location.href = "{{ '/oops.html' | relative_url }}";
+      window.location.assign("{{ '/oops.html' | relative_url }}");
     });
   });
 </script>
