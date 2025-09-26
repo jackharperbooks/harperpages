@@ -14,5 +14,39 @@
   </main>
   {% include footer.html %}
   <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
+
+  <!-- Age Gate Modal -->
+<div id="age-gate" class="age-gate-overlay">
+  <div class="age-gate-modal">
+    <h2>Are you 18 or old AF?</h2>
+    <p>This site may contain mature content. Please confirm your age.</p>
+    <button id="age-yes">👍Yes, I might be a dinosaur!</button>
+    <button id="age-no">Nope.👎</button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const ageGate = document.getElementById("age-gate");
+    const yesBtn = document.getElementById("age-yes");
+    const noBtn = document.getElementById("age-no");
+
+    // Only show if not already confirmed
+    if (!localStorage.getItem("ageConfirmed")) {
+      ageGate.style.display = "flex";
+    }
+
+    yesBtn.addEventListener("click", function() {
+      localStorage.setItem("ageConfirmed", "true");
+      ageGate.style.display = "none";
+    });
+
+    noBtn.addEventListener("click", function() {
+      window.location.href = "{{ '/oops.html' | relative_url }}";
+    });
+  });
+</script>
+
+  
 </body>
 </html>
