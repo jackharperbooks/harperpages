@@ -3,18 +3,11 @@ layout: default
 title: HarperPages
 ---
 
-<section class="parallax">
+<!-- Hero Parallax -->
+<div class="parallax" style="background-image: url('/assets/images/hero.jpg');">
   <div class="hero-text">
     <h1>HarperPages</h1>
     <p>Books by Jack Harper</p>
-  </div>
-</section>
-
-<!-- First Parallax (already in place) -->
-<div class="parallax" style="background-image: url('/assets/images/hero.jpg');">
-  <div class="hero-text">
-    <h1>Welcome to HarperPages</h1>
-    <p>Author. Designer. Storyteller.</p>
   </div>
 </div>
 
@@ -34,11 +27,13 @@ title: HarperPages
   </div>
 </div>
 
+<!-- Intro Section -->
 <section class="intro">
   <h2>Welcome</h2>
   <p>Step into my library. Each book is a piece of my journey, shared freely.</p>
 </section>
 
+<!-- Featured Book Section -->
 <section class="featured-book">
   <h2>Featured Book</h2>
   {% assign latest = site.books | sort: 'date' | last %}
@@ -53,4 +48,3 @@ title: HarperPages
     </a>
   </div>
 </section>
-
