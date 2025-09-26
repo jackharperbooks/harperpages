@@ -94,7 +94,7 @@ h3 {
    PARALLAX (Desktop + Mobile)
    =========================== */
 .parallax {
-  height: 100vh;
+  height: 100vh;                  /* full screen on desktop */
   background-attachment: fixed;   /* parallax on desktop */
   background-position: center;
   background-repeat: no-repeat;
@@ -127,15 +127,15 @@ h3 {
   border-radius: 8px;
 }
 
-/* Mobile fallback: disable fixed backgrounds */
+/* Mobile fallback: adjust height + disable fixed backgrounds */
 @media (max-width: 768px) {
   .parallax {
-    background-attachment: scroll; /* graceful fallback */
-    background-position: center center;
+    height: 60vh;                 /* shrink section height */
+    background-attachment: scroll; /* smoother on mobile */
+    background-position: top center; /* keep faces visible */
     background-size: cover;
   }
 }
-
 
 /* ===========================
    INTRO SECTION
