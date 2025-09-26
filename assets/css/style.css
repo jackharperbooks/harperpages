@@ -419,12 +419,25 @@ button:hover {
   transform: translateY(-2px);
 }
 /* OOPS VIDEO */
+/* Responsive video embed for Oops page */
 .oops-video {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
-.oops-video iframe {
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 560px;   /* cap width on large screens */
+  aspect-ratio: 16 / 9; /* modern browsers keep 16:9 ratio */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
