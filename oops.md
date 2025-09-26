@@ -3,3 +3,20 @@ layout: default
 title: Oops
 permalink: /oops.html
 ---
+
+<h1>You might’ve hit the wrong button… try again 😅</h1>
+<p>This portal is for grown folks and "maybe dinosaurs." If you’re 18+ and consent to viewing mature content, head back and enter properly.</p>
+<p><a href="{{ '/' | relative_url }}">Return to the site</a></p>
+
+<!-- Jacques-esque Easter Egg -->
+<div class="oops-video">
+  <div class="video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/CduA0TULnow"
+      title="Oops!... I Did It Again (Britney Spears)"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
