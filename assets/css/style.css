@@ -228,23 +228,23 @@ h3 {
 }
 
 /* ===========================
-   HEADER NAVIGATION (Sticky)
+   HEADER NAVIGATION (Sticky + Translucent)
    =========================== */
 .site-header {
-  position: sticky;   /* makes it stick */
-  top: 0;             /* stick to the very top */
-  z-index: 1000;      /* keep it above parallax tiles */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   flex-direction: column; /* logo above nav */
   align-items: center;
   padding: 1rem 0;
-  background: var(--bg); /* solid background so text stays readable */
-  border-bottom: 1px solid rgba(255,255,255,0.1); /* subtle divider */
-}
 
-.logo {
-  max-height: 60px;
-  margin-bottom: 1rem;
+  /* Translucent background */
+  background: rgba(15, 15, 17, 0.8); /* matches var(--bg) but 80% opacity */
+  backdrop-filter: blur(6px);        /* subtle glassy blur effect */
+  -webkit-backdrop-filter: blur(6px); /* Safari support */
+
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 /* ===========================
