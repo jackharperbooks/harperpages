@@ -44,15 +44,18 @@
     });
 
     noBtn.addEventListener("click", function() {
-      // fade out overlay
-      ageGate.style.opacity = "0";
-      // after 300ms, hide completely and redirect
-      setTimeout(function() {
-        ageGate.style.display = "none";
-        window.location.href = "{{ '/oops.html' | relative_url }}";
-      }, 300);
-    });
-  });
+  // Clear any stored flag so the modal always shows again
+  localStorage.removeItem("ageConfirmed");
+
+  // Fade out overlay
+  ageGate.style.opacity = "0";
+
+  // After 300ms, hide completely and redirect
+  setTimeout(function() {
+    ageGate.style.display = "none";
+    window.location.href = "{{ '/oops.html' | relative_url }}";
+  }, 300);
+});
 </script>
 
 
