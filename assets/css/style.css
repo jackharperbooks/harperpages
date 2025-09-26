@@ -248,6 +248,31 @@ h3 {
 }
 
 /* ===========================
+   NAVIGATION BUTTONS
+   =========================== */
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* keep them centered under the logo */
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 0.6rem 1.2rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px; /* pill shape */
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+/* ===========================
    CONTACT FORM STYLING
    =========================== */
 form {
