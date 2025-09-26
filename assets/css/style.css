@@ -369,10 +369,12 @@ button:hover {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.85);
-  display: none; /* important: start hidden */
+  display: none;
   align-items: center;
   justify-content: center;
   z-index: 2000;
+  opacity: 1;
+  transition: opacity 0.3s ease; /* enables fade-out */
 }
 
 .age-gate-modal {
