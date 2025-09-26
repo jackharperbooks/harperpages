@@ -375,6 +375,28 @@ h3 {
 .faq-section details[open] .icon {
   transform: rotate(45deg);
 }
+/* Animate the opening/closing of details */
+.faq-section details {
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  max-height: 2.5em; /* just enough to show the summary line */
+  padding-bottom: 0;
+}
+
+.faq-section details[open] {
+  max-height: 1000px; /* large enough to fit expanded content */
+  padding-bottom: 0.5rem;
+}
+
+/* Optional: fade-in for the answer text */
+.faq-section details p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.faq-section details[open] p {
+  opacity: 1;
+}
 
 /* ===========================
    CONTACT FORM STYLING
