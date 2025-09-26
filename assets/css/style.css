@@ -367,8 +367,13 @@ h3 {
 }
 
 .faq-section .icon {
-  font-weight: bold;
-  margin-left: 0.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate + into × when open */
+.faq-section details[open] .icon {
+  transform: rotate(45deg);
 }
 
 /* ===========================
