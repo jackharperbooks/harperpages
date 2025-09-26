@@ -228,40 +228,23 @@ h3 {
 }
 
 /* ===========================
-   HEADER NAVIGATION BUTTONS
+   HEADER NAVIGATION (Sticky)
    =========================== */
 .site-header {
+  position: sticky;   /* makes it stick */
+  top: 0;             /* stick to the very top */
+  z-index: 1000;      /* keep it above parallax tiles */
   display: flex;
-  flex-direction: column; /* stack logo above nav */
-  align-items: center;    /* center everything horizontally */
+  flex-direction: column; /* logo above nav */
+  align-items: center;
   padding: 1rem 0;
+  background: var(--bg); /* solid background so text stays readable */
+  border-bottom: 1px solid rgba(255,255,255,0.1); /* subtle divider */
 }
 
 .logo {
-  max-height: 60px; /* placeholder logo size */
+  max-height: 60px;
   margin-bottom: 1rem;
-}
-
-.nav-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center; /* center the buttons */
-  flex-wrap: wrap;         /* wrap nicely on smaller screens */
-}
-
-.nav-btn {
-  padding: 0.6rem 1.2rem;
-  background: var(--accent);
-  color: white;
-  text-decoration: none;
-  border-radius: 30px; /* pill shape */
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.nav-btn:hover {
-  background: var(--accent-hover);
-  transform: translateY(-2px);
 }
 
 /* ===========================
