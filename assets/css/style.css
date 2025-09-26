@@ -103,6 +103,10 @@ h3 {
   align-items: center;
   justify-content: center;
   position: relative;             /* needed for overlay */
+
+  /* --- Swanky nudge animation --- */
+  animation: nudge 12s ease-in-out infinite;
+  transition: transform 0.6s ease; /* smooth hover lift */
 }
 
 /* Overlay gradient for readability */
@@ -125,6 +129,18 @@ h3 {
   color: white;
   padding: 2rem;
   border-radius: 8px;
+}
+
+/* Hover/tap lift effect */
+.parallax:hover {
+  transform: scale(1.03) translateY(-5px);
+}
+
+/* Keyframes for gentle background drift */
+@keyframes nudge {
+  0%   { background-position: center top; }
+  50%  { background-position: center calc(50% + 15px); }
+  100% { background-position: center top; }
 }
 
 /* Tablet & small laptop adjustments */
