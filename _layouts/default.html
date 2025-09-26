@@ -28,7 +28,7 @@
   <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
 
   <!-- Age Gate Script -->
- <script>
+<script>
   document.addEventListener("DOMContentLoaded", function() {
     const ageGate = document.getElementById("age-gate");
     const yesBtn = document.getElementById("age-yes");
@@ -44,11 +44,17 @@
     });
 
     noBtn.addEventListener("click", function() {
-      ageGate.style.display = "none"; // hide overlay immediately
-      window.location.assign("{{ '/oops.html' | relative_url }}");
+      // fade out overlay
+      ageGate.style.opacity = "0";
+      // after 300ms, hide completely and redirect
+      setTimeout(function() {
+        ageGate.style.display = "none";
+        window.location.href = "{{ '/oops.html' | relative_url }}";
+      }, 300);
     });
   });
 </script>
+
 
   
 </body>
