@@ -34,17 +34,27 @@ const themes = {
   }
 };
 
-let current = "moody"; // default
+// Order of cycling
+const order = ["moody", "warm", "crisp", "fresh"];
 
-document.getElementById("theme-toggle").addEventListener("click", () => {
-  // Cycle through themes
-  const order = ["moody", "warm", "crisp", "fresh"];
-  let next = order[(order.indexOf(current) + 1) % order.length];
-  current = next;
+// Load saved theme or default to moody
+let current = localStorage.getItem("theme") || "moody";
 
-  // Apply CSS variables
+// Apply a theme
+function applyTheme(name) {
   const root = document.documentElement;
-  Object.entries(themes[next]).forEach(([key, value]) => {
+  Object.entries(themes[name]).forEach(([key, value]) => {
     root.style.setProperty(key, value);
   });
+  current = name;
+  localStorage.setItem("theme", name);
+}
+
+// Apply saved theme on page load
+applyTheme(current);
+
+// Toggle on button click
+document.getElementById("theme-toggle").addEventListener("click", () => {
+  let next = order[(order.indexOf(current) + 1) % order.length];
+  applyTheme(next);
 });
