@@ -339,6 +339,39 @@ h3 {
 }
 
 /* ===========================
+   FAQ SECTION on ABOUT PAGE
+   =========================== */
+.faq-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.faq-section details {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.faq-section summary {
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-section summary::-webkit-details-marker {
+  display: none; /* hide default arrow */
+}
+
+.faq-section .icon {
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+/* ===========================
    CONTACT FORM STYLING
    =========================== */
 form {
