@@ -1,3 +1,98 @@
+/* ===========================
+   COLOR PALETTES
+   Switch aesthetics by commenting/uncommenting
+   =========================== */
+
+/* --- Moody / Literary (ACTIVE) --- */
+:root {
+  --bg: #0f0f11;          /* deep charcoal */
+  --fg: #f4f4f7;          /* soft off-white */
+  --accent: #7aa6ff;      /* cool blue */
+  --accent-hover: #5a85e6;
+  --card-bg: #1a1a1d;
+  --muted: #ccc;
+}
+
+/* --- Warm / Inviting (Autumn) ---
+:root {
+  --bg: #faf3e0;          /* parchment cream */
+  --fg: #2c2c2c;          /* dark brown text */
+  --accent: #e67e22;      /* pumpkin orange */
+  --accent-hover: #cf711f;
+  --card-bg: #fff5e1;
+  --muted: #666;
+}
+*/
+
+/* --- Crisp / Minimal (Winter) ---
+:root {
+  --bg: #ffffff;          /* clean white */
+  --fg: #222222;          /* near-black text */
+  --accent: #0077cc;      /* icy blue */
+  --accent-hover: #005fa3;
+  --card-bg: #f4f4f7;
+  --muted: #555;
+}
+*/
+
+/* --- Fresh / Vibrant (Spring/Summer) ---
+:root {
+  --bg: #f0fff4;          /* pale mint */
+  --fg: #1a202c;          /* slate gray text */
+  --accent: #38a169;      /* fresh green */
+  --accent-hover: #2f855a;
+  --card-bg: #ffffff;
+  --muted: #4a5568;
+}
+*/
+
+/* ===========================
+   COLOR PALETTE VARIABLES
+   =========================== */
+:root {
+  --bg: #0f0f11;          /* background color */
+  --fg: #f4f4f7;          /* foreground/text color */
+  --accent: #7aa6ff;      /* primary accent (buttons, links) */
+  --accent-hover: #5a85e6; /* hover accent */
+  --card-bg: #1a1a1d;     /* background for cards/sections */
+  --muted: #ccc;          /* muted text */
+}
+
+/* ===========================
+   GLOBAL TYPOGRAPHY & BODY
+   =========================== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* ===========================
+   PARALLAX HERO
+   =========================== */
 .parallax {
   background-image: url('../images/hero.jpg'); /* replace with your chosen image */
   height: 100vh; /* full screen height */
@@ -18,11 +113,18 @@
   border-radius: 8px;
 }
 
+/* ===========================
+   INTRO SECTION
+   =========================== */
 .intro {
   padding: 3rem 2rem;
   background: var(--bg);
   color: var(--fg);
 }
+
+/* ===========================
+   BOOK LANDING PAGE CONTENT
+   =========================== */
 .book-content {
   display: flex;
   flex-wrap: wrap;
@@ -42,6 +144,9 @@
   min-width: 250px;
 }
 
+/* ===========================
+   DOWNLOAD BUTTON
+   =========================== */
 .download-btn {
   display: inline-block;
   margin-top: 1rem;
@@ -49,12 +154,18 @@
   background: var(--accent);
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 30px; /* pill shape */
   font-weight: bold;
+  transition: all 0.2s ease;
 }
 .download-btn:hover {
-  background: #5a85e6;
+  background: var(--accent-hover);
+  transform: translateY(-2px);
 }
+
+/* ===========================
+   BOOKS INDEX GRID
+   =========================== */
 .books-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -63,39 +174,38 @@
 }
 
 .book-card {
-  background: #1a1a1d;
+  background: var(--card-bg);
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
   transition: transform 0.2s ease;
 }
-
 .book-card:hover {
   transform: translateY(-5px);
 }
-
 .book-card img {
   max-width: 100%;
   border-radius: 4px;
   margin-bottom: 1rem;
 }
-
 .book-card h2 {
   margin: 0.5rem 0;
   font-size: 1.25rem;
 }
-
 .book-card p {
   font-size: 0.9rem;
-  color: #ccc;
+  color: var(--muted);
 }
+
+/* ===========================
+   FEATURED BOOK SECTION
+   =========================== */
 .featured-book {
   margin: 4rem 0;
   padding: 2rem;
-  background: #1a1a1d;
+  background: var(--card-bg);
   border-radius: 8px;
 }
-
 .featured-card {
   display: flex;
   flex-wrap: wrap;
@@ -103,74 +213,69 @@
   align-items: center;
   text-decoration: none;
 }
-
 .featured-card img {
   max-width: 200px;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
-
 .featured-info {
   flex: 1;
   min-width: 200px;
-  color: #f4f4f7;
+  color: var(--fg);
 }
-
 .featured-info h3 {
   margin: 0 0 0.5rem;
 }
-/* ===========================
-   BUTTON STYLING
-   - Adjust padding, colors, hover effects here
-   - Current style: pill-shaped, accent background
-   =========================== */
 
+/* ===========================
+   HEADER NAVIGATION BUTTONS
+   =========================== */
 .nav-buttons {
   display: flex;
   gap: 1rem;
 }
-
 .nav-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   background: var(--accent);
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 30px; /* pill shape */
   font-weight: 600;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: all 0.2s ease;
 }
-
 .nav-btn:hover {
-  background: #5a85e6;
+  background: var(--accent-hover);
   transform: translateY(-2px);
 }
-/* CONTACT FORM STYLING */
+
+/* ===========================
+   CONTACT FORM STYLING
+   =========================== */
 form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   max-width: 500px;
 }
-
 input, textarea {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #444;
   border-radius: 4px;
   background: #222;
-  color: #f4f4f7;
+  color: var(--fg);
 }
-
 button {
   padding: 0.75rem 1.25rem;
   background: var(--accent);
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
-
 button:hover {
-  background: #5a85e6;
+  background: var(--accent-hover);
+  transform: translateY(-2px);
 }
