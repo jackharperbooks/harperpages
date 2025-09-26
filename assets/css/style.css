@@ -89,3 +89,33 @@
   font-size: 0.9rem;
   color: #ccc;
 }
+.featured-book {
+  margin: 4rem 0;
+  padding: 2rem;
+  background: #1a1a1d;
+  border-radius: 8px;
+}
+
+.featured-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  text-decoration: none;
+}
+
+.featured-card img {
+  max-width: 200px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.featured-info {
+  flex: 1;
+  min-width: 200px;
+  color: #f4f4f7;
+}
+
+.featured-info h3 {
+  margin: 0 0 0.5rem;
+}
