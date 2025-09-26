@@ -23,3 +23,35 @@
   background: var(--bg);
   color: var(--fg);
 }
+.book-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  align-items: flex-start;
+}
+
+.book-cover {
+  max-width: 300px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.book-blurb {
+  flex: 1;
+  min-width: 250px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.download-btn:hover {
+  background: #5a85e6;
+}
