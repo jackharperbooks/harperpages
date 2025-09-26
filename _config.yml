@@ -1,7 +1,8 @@
 title: HarperPages
 description: Books by Jack Harper
-baseurl: "" # keep empty when using project root
-url: "https://jackharperbooks.github.io/harperpages" # replace with your username URL now; your custom domain later
+url: "https://jackharperbooks.github.io"
+baseurl: "/harperpages"
+
 
 # Collections
 collections:
