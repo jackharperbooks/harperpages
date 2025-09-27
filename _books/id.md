@@ -3,7 +3,7 @@ layout: book
 title: "Island Daddy"          # Full title of the book
 tagline: "Spicy Billionare meets suburban city boy from the mainland... sparks actually do fly!"     # Subtitle, hook, or mood phrase
 hero: /assets/images/id-hero.jpg   # Wide hero background image
-cover: /assets/images/id-cover.jpg # Book cover image
+cover: assets/images/id-cover.jpg # Book cover image
 epub: /books/id/id.epub     # Path to the EPUB file
 date: 2023-07-06                  # Publication date (controls order)
 ---
