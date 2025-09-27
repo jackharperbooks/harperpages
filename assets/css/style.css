@@ -411,35 +411,12 @@ h3 {
 .faq-section details[open] p:nth-of-type(4) {
   transition-delay: 0.55s;
 }
-.exhibit-label {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #660000;
-  margin: 1rem 0 0.5rem 0;
-  letter-spacing: 1px;
-}
 .ug-review-text {
-  position: relative;
-  color: #b30000; /* blood red */
-  font-style: italic;
-  border-left: 4px solid #b30000;
-  padding: 1rem;
-  margin: 0 0 1rem 0;
-  background: #fff5f5;
-  overflow: hidden;
-}
-/* Watermark stamp */
-.ug-review-text .watermark {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-25deg);
-  font-size: 3rem;
-  font-weight: bold;
-  color: rgba(179, 0, 0, 0.15); /* translucent blood red */
-  pointer-events: none; /* so it doesn’t block text selection */
-  white-space: nowrap;
-  user-select: none;
+  color: #b30000; /* deep blood red */
+  font-style: italic; /* optional: makes it feel more like a quoted review */
+  border-left: 4px solid #b30000; /* optional: adds a visual bar */
+  padding-left: 1rem;
+  margin: 1rem 0;
 }
 
 /* ===========================
