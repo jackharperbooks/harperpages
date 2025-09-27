@@ -3,7 +3,7 @@ layout: book
 title: "Prince of Bedrock"          # Full title of the book
 tagline: "Sometimes, royalty is gained in the most unlikely of places..."     # Subtitle, hook, or mood phrase
 hero: /assets/images/pob-hero.jpg   # Wide hero background image
-cover: /assets/images/pob-cover.jpg # Book cover image
+cover: assets/images/pob-cover.jpg # Book cover image
 epub: /books/pob/pob.epub     # Path to the EPUB file
 date: 2023-02-14                  # Publication date (controls order)
 ---
