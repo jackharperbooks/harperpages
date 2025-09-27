@@ -69,12 +69,9 @@ permalink: /about/
     whom of which got a fraction of plot details <strong>WRONG</strong>, wrapped up his "review" 
     with a personal plug to his own 'Memoir'... stick around for the ride, because this is one long answer.
   </p>
-    <!-- Exhibit A label -->
-  <div class="exhibit-label">Exhibit A: The Infamous Review</div>  
-  <!-- Review block with watermark -->
+    <!-- Review block with watermark -->
 <div class="review-text">
-  <div class="watermark">EXHIBIT A</div>
-    <p>
+      <p>
       The book is, on the one hand, the gripping narrative of a hellish road trip by the grief-addled Grayson, 
       who decides to drive back to Fenton <i>(it's actually FELTON)</i> after a thirty-year silence to break the bad news to their two families. 
       On the other hand, the book is also a tender recounting of the couple’s three happy decades as seen through 
