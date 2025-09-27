@@ -50,4 +50,4 @@ Can love survive when the truth finally washes ashore?
   },
   "keywords": "free gay romance, MM romance, Daddy/boy, Age Gap Romance, paranormal romance, fated mates, Hurt/comfort romance, queer love story, steamy gay fiction, emotionally charged fiction, romcom,"
 }
-</script><img width="835" height="628" alt="image" src="https://github.com/user-attachments/assets/06b767dd-049b-4575-8b9f-d25f1dc3f8a7" />
+</script>
