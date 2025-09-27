@@ -450,6 +450,13 @@ button:hover {
   border-radius: 50%;
   line-height: 1;
 }
+.ug-review-text {
+  color: #b30000; /* deep blood red */
+  font-style: italic; /* optional: makes it feel more like a quoted review */
+  border-left: 4px solid #b30000; /* optional: adds a visual bar */
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
 
 /* ===========================
    FOOTER STYLING
