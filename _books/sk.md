@@ -3,7 +3,7 @@ layout: book
 title: "Safe Keeping"          # Full title of the book
 tagline: "Something shifty this way comes..."     # Subtitle, hook, or mood phrase
 hero: /assets/images/sk-hero.jpg   # Wide hero background image
-cover: /assets/images/sk-cover.jpg # Book cover image
+cover: assets/images/sk-cover.jpg # Book cover image
 epub: /books/sk/sk.epub     # Path to the EPUB file
 date: 2023-04-05                  # Publication date (controls order)
 ---
