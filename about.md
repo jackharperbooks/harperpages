@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<div style="text-align:center; max-width:700px; margin: 0 auto;">
-  <!-- About Image Placeholder -->
+<div style="text-align:center; max-width:700px; margin: 3rem auto 0 auto;">
   <img src="{{ site.baseurl }}/assets/images/about-placeholder.jpg" 
        alt="Jack Harper" 
        style="width: 300px; aspect-ratio: 3/4; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;">
