@@ -16,3 +16,38 @@ Kragen has nothing but a suitcase, a wedding invitation, and a secret that could
 On the beaches of Hawaii, desire collides with deception. And when the tide pulls back, only one question remains:
 
 Can love survive when the truth finally washes ashore?
+
+
+<!-- Book content here -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Island Daddy",
+  "author": {
+    "@type": "Person",
+    "name": "Jack Harper"
+  },
+  "genre": ["MM Romance", "Daddy/boy Romance", "Age Gap Romance", "Romcom", "Queer Fiction"],
+  "description": "A spicy beach read where billionaire bad boy meets suburban outcast and sparks literally fly! - Totally free to read online.",
+  "url": "https://jackharperbooks.github.io/harperpages/books/id",
+  "image": "https://jackharperbooks.github.io/harperpages/assets/images/id-cover.jpg",
+  "bookFormat": "EBook",
+  "inLanguage": "en",
+  "datePublished": "2023-07-10",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://jackharperbooks.github.io/harperpages/books/id"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HarperPages"
+  },
+  "keywords": "free gay romance, MM romance, Daddy/boy, Age Gap Romance, paranormal romance, fated mates, Hurt/comfort romance, queer love story, steamy gay fiction, emotionally charged fiction, romcom,"
+}
+</script><img width="835" height="628" alt="image" src="https://github.com/user-attachments/assets/06b767dd-049b-4575-8b9f-d25f1dc3f8a7" />
