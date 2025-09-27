@@ -34,18 +34,24 @@ title: HarperPages
 <p>Step into my library. Every book here is a piece of my journey, a pound of my flesh—sealed with literary flourish. And now, shared freely, because tariffs suck, Pumpkin Spice Palpatine can take a seat, and that Hillbilly Elegy nitwit isn’t worth the ink. Writing, for me, has always been therapy—a way to wrestle with my own mental health struggles. And let’s be real: <strong>The Catty Bitches Club</strong> of Facebook’s MM romance scene is more interested in draining wallets than telling stories. Here at HarperPages, my mission is different: to give you my backlist titles FREE OF CHARGE, along with new worlds I’ve yet to unearth. Consider it my token of gratitude for readers like you.</p>
 </section>
 
-<!-- Featured Book Section -->
-<section class="featured-book">
-  <h2>Featured Book</h2>
-  {% assign latest = site.books | sort: 'date' | last %}
-  <div class="featured-card">
-    <a href="{{ latest.url | relative_url }}">
-      <img src="{{ latest.cover | relative_url }}" alt="{{ latest.title }} cover">
-      <div class="featured-info">
-        <h3>{{ latest.title }}</h3>
-        <p>{{ latest.tagline }}</p>
-        <p><strong>Read more →</strong></p>
-      </div>
+<!-- Featured Books Section -->
+<section class="featured-books">
+  <h2>Featured Books</h2>
+  {% assign latest_books = site.books | sort: 'date' | reverse %}
+  {% for book in latest_books limit:3 %}
+    <div class="featured-card">
+      <a href="{{ book.url | relative_url }}">
+        <img src="{{ book.cover | relative_url }}" alt="{{ book.title }} cover">
+        <div class="featured-info">
+          <h3>{{ book.title }}</h3>
+          <p>{{ book.tagline }}</p>
+          <p><strong>Read more →</strong></p>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</section>
+
     </a>
   </div>
 </section>
