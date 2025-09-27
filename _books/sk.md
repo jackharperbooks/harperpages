@@ -50,4 +50,4 @@ Safe Keeping — Because some hearts are built to guard, and some are built to b
   },
   "keywords": "free gay romance, MM romance, Daddy/boy, Age Gap Romance, paranormal romance, fated mates, Hurt/comfort romance, queer love story, steamy gay fiction, emotionally charged fiction, romcom,"
 }
-</script><img width="845" height="628" alt="image" src="https://github.com/user-attachments/assets/a1aa5158-979a-4e08-839c-e717281bc6e3" />
+</script>
