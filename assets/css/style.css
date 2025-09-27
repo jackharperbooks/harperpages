@@ -264,31 +264,41 @@ h3 {
 }
 
 /* ===========================
-   FEATURED BOOK SECTION
+   FEATURED BOOKS SECTION
    =========================== */
-.featured-book {
+.featured-books {
   margin: 4rem 0;
   padding: 2rem;
   background: var(--card-bg);
   border-radius: 8px;
 }
+
+/* Grid layout for multiple featured cards */
+.featured-books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
 .featured-card {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  flex-direction: column; /* stack image + info vertically */
   align-items: center;
+  text-align: center;
   text-decoration: none;
 }
+
 .featured-card img {
   max-width: 200px;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  margin-bottom: 1rem;
 }
+
 .featured-info {
-  flex: 1;
-  min-width: 200px;
   color: var(--fg);
 }
+
 .featured-info h3 {
   margin: 0 0 0.5rem;
 }
