@@ -3,7 +3,7 @@ layout: book
 title: "Finding a Little Spirit"          # Full title of the book
 tagline: "Some gifts can’t be wrapped—only found, between the living and the beyond..."     # Subtitle, hook, or mood phrase
 hero: /assets/images/spirit-hero.jpg   # Wide hero background image
-cover: /assets/images/spirit-cover.jpg # Book cover image
+cover: assets/images/spirit-cover.jpg # Book cover image
 epub: /books/spirit/spirit.epub     # Path to the EPUB file
 date: 2025-02-14                  # Publication date (controls order)
 ---
