@@ -3,12 +3,20 @@ description: Books by Jack Harper
 url: "https://jackharperbooks.github.io"
 baseurl: "/harperpages"
 
-
 # Collections
 collections:
   books:
     output: true
     permalink: /books/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+
+# Feed settings
+feed:
+  collections:
+    - books
 
 # Build settings
 markdown: kramdown
