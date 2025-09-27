@@ -16,3 +16,38 @@ The job? His. The guy? Into him. The life? Perfect.
 But perfection is a lie. And when the fantasy shatters, Judah has to confront the one role he’s never dared to play: himself.
 
 A romantic comedy about chasing dreams, falling hard, and learning that the only glow that matters comes from within.
+
+
+<!-- Book content here -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "…and a Bag of Chips",
+  "author": {
+    "@type": "Person",
+    "name": "Jack Harper"
+  },
+  "genre": ["MM Romance", "Gay Romance", "Age Gap Romance", "Romcom", "Queer Fiction"],
+  "description": "A steamy, campy gay romcom set in New York City. Literary adaptation of the blockbuster with Amy Schumer, "I Feel Pretty" - Totally free to read online.",
+  "url": "https://jackharperbooks.github.io/harperpages/books/boc",
+  "image": "https://jackharperbooks.github.io/harperpages/assets/images/boc-cover.jpg",
+  "bookFormat": "EBook",
+  "inLanguage": "en",
+  "datePublished": "2025-07-10",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://jackharperbooks.github.io/harperpages/books/boc"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HarperPages"
+  },
+  "keywords": "free gay romance, MM romance, Daddy/boy, Age Gap Romance, paranormal romance, fated mates, Hurt/comfort romance, queer love story, steamy gay fiction, emotionally charged fiction, romcom,"
+}
+</script>
