@@ -71,8 +71,9 @@ permalink: /about/
   </p>
     <!-- Exhibit A label -->
   <div class="exhibit-label">Exhibit A: The Infamous Review</div>  
-  <!-- Wrap the "review" in a styled container -->
-  <div class="ug-review-text">
+  <!-- Review block with watermark -->
+<div class="review-text">
+  <div class="watermark">EXHIBIT A</div>
     <p>
       The book is, on the one hand, the gripping narrative of a hellish road trip by the grief-addled Grayson, 
       who decides to drive back to Fenton <i>(it's actually FELTON)</i> after a thirty-year silence to break the bad news to their two families. 
