@@ -69,27 +69,30 @@ permalink: /about/
     whom of which got a fraction of plot details <strong>WRONG</strong>, wrapped up his "review" 
     with a personal plug to his own 'Memoir'... stick around for the ride, because this is one long answer.
   </p>
-  <p>
-    The book is, on the one hand, the gripping narrative of a hellish road trip by the grief-addled Grayson, 
-    who decides to drive back to Fenton <i>(it's actually FELTON)</i> after a thirty-year silence to break the bad news to their two families. 
-    On the other hand, the book is also a tender recounting of the couple’s three happy decades as seen through 
-    Julian’s journals and Grayson’s memories sparked by those journals. This structure is very successful with 
-    its consistent counterpoint between sadness and joy.
-  </p>
-  <p>
-    Grief is the centerpiece to this whole book, its driving force. Grayson’s recklessness is harrowing. 
-    As someone my age with a history of dementia in my family (including my father), it is a haunting narrative, 
-    tapping into my own deepest fears. There are a couple of significant problems with Harper’s powerful story. 
-    There are lots of good ideas here, some of which are never followed up on, including another gay couple who 
-    have been their friends since the day they arrived in New York. <em>(well if ya'd have stuck around for "Sands of Time"
-    you'd have read another <strong>harrowing</strong> novel about Miles and Alex.)</em>
-  </p>
-  <p>
-    Ultimately, the ending, which is dramatic and unexpected, upset me and disappointed me. Nihilistic and depressing 
-    for an old man like me, with a husband of 47 years, it offers only a message of despair rather than hope. 
-    All I can do in answer to this is quote from my own memoir’s final page: — and 🤷 who 
-    <i>actually gives a flying fuck</i> about his 110 word count excerpt?!?!
-  </p>
+  <!-- Wrap the "review" in a styled container -->
+  <div class="ug-review-text">
+    <p>
+      The book is, on the one hand, the gripping narrative of a hellish road trip by the grief-addled Grayson, 
+      who decides to drive back to Fenton <i>(it's actually FELTON)</i> after a thirty-year silence to break the bad news to their two families. 
+      On the other hand, the book is also a tender recounting of the couple’s three happy decades as seen through 
+      Julian’s journals and Grayson’s memories sparked by those journals. This structure is very successful with 
+      its consistent counterpoint between sadness and joy.
+    </p>
+    <p>
+      Grief is the centerpiece to this whole book, its driving force. Grayson’s recklessness is harrowing. 
+      As someone my age with a history of dementia in my family (including my father), it is a haunting narrative, 
+      tapping into my own deepest fears. There are a couple of significant problems with Harper’s powerful story. 
+      There are lots of good ideas here, some of which are never followed up on, including another gay couple who 
+      have been their friends since the day they arrived in New York. <em>(well if ya'd have stuck around for "Sands of Time"
+      you'd have read another <strong>harrowing</strong> novel about Miles and Alex.)</em>
+    </p>
+    <p>
+      Ultimately, the ending, which is dramatic and unexpected, upset me and disappointed me. Nihilistic and depressing 
+      for an old man like me, with a husband of 47 years, it offers only a message of despair rather than hope. 
+      All I can do in answer to this is quote from my own memoir’s final page: — and 🤷 who 
+      <i>actually gives a flying fuck</i> about his 110 word count excerpt?!?!
+    </p>
+  </div>
 </details>
 
 <details>
