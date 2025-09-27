@@ -70,7 +70,7 @@ permalink: /about/
     with a personal plug to his own 'Memoir'... stick around for the ride, because this is one long answer.
   </p>
     <!-- Review block with watermark -->
-<div class="review-text">
+<div class="ug-review-text">
       <p>
       The book is, on the one hand, the gripping narrative of a hellish road trip by the grief-addled Grayson, 
       who decides to drive back to Fenton <i>(it's actually FELTON)</i> after a thirty-year silence to break the bad news to their two families. 
