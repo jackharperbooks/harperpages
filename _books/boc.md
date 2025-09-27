@@ -3,7 +3,7 @@ layout: book
 title: "...and a Bag of Chips"          # Full title of the book
 tagline: "When the mirror lies, the hardest role to play is yourself..."     # Subtitle, hook, or mood phrase
 hero: /assets/images/boc-hero.jpg   # Wide hero background image
-cover: /assets/images/boc-cover.jpg # Book cover image
+cover: assets/images/boc-cover.jpg # Book cover image
 epub: /books/boc/boc.epub     # Path to the EPUB file
 date: 2025-05-04                  # Publication date (controls order)
 ---
