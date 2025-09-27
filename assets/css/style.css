@@ -450,12 +450,20 @@ button:hover {
   border-radius: 50%;
   line-height: 1;
 }
+.exhibit-label {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #660000;
+  margin: 1rem 0 0.5rem 0;
+  letter-spacing: 1px;
+}
 .ug-review-text {
-  color: #b30000; /* deep blood red */
-  font-style: italic; /* optional: makes it feel more like a quoted review */
-  border-left: 4px solid #b30000; /* optional: adds a visual bar */
+  color: #b30000; /* blood red */
+  font-style: italic;
+  border-left: 4px solid #b30000;
   padding-left: 1rem;
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
+  background: #fff5f5; /* faint red background for contrast */
 }
 
 /* ===========================
