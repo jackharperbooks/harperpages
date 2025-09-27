@@ -262,6 +262,10 @@ h3 {
   font-size: 0.9rem;
   color: var(--muted);
 }
+.subscribe-cta {
+  margin-top: 2rem;
+  text-align: center;
+}
 
 /* ===========================
    FEATURED BOOKS SECTION
