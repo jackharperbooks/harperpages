@@ -5,6 +5,12 @@ permalink: /books/
 ---
 
 <h1>Books</h1>
+
+<!-- Subscribe Button at the Top -->
+<div class="subscribe-cta">
+  <a href="{{ '/books/feed.xml' | relative_url }}" class="nav-btn">📡Notify Me 4 New Releases</a>
+</div>
+
 <div class="books-grid">
   {% for book in site.books %}
     <div class="book-card">
@@ -15,9 +21,4 @@ permalink: /books/
       </a>
     </div>
   {% endfor %}
-</div>
-
-<!-- Subscribe Button -->
-<div class="subscribe-cta">
-  <a href="{{ '/books/feed.xml' | relative_url }}" class="nav-btn">📡CLICK 4 ALL NEW RELEASES</a>
 </div>
