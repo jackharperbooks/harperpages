@@ -69,6 +69,8 @@ permalink: /about/
     whom of which got a fraction of plot details <strong>WRONG</strong>, wrapped up his "review" 
     with a personal plug to his own 'Memoir'... stick around for the ride, because this is one long answer.
   </p>
+    <!-- Exhibit A label -->
+  <div class="exhibit-label">Exhibit A: The Infamous Review</div>  
   <!-- Wrap the "review" in a styled container -->
   <div class="ug-review-text">
     <p>
