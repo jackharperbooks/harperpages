@@ -25,7 +25,7 @@
    GLOBAL TYPOGRAPHY & BODY
    =========================== */
 body {
-  padding-top: 120px; /* adjust to match your header’s actual height */
+  padding-top: 180px; /* adjust to match your header’s actual height */
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: var(--bg);
