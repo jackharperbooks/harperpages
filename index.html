@@ -2,6 +2,19 @@
 layout: default
 title: HarperPages
 ---
+.hero {
+  background: linear-gradient(270deg, #f57c00, #f9a825, #2b2b2b, #0d0d0d);
+  background-size: 600% 600%;
+  animation: tigerFlow 20s ease infinite;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+@keyframes tigerFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 <!-- Hero Parallax -->
 <div class="parallax" style="background-image: url('{{ "/assets/images/hero.jpg" | relative_url }}');">
