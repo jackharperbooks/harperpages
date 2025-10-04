@@ -204,7 +204,7 @@ h3 { font-size: 1.5rem; font-weight: 600; }
 /* Force tiger headings consistency in hero/book areas */
 .hero-text h1, .hero-text h2,
 .book-content h1, .book-content h2 {
-  font-family: 'Cinzel', 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Cover glow with tiger vibe */
