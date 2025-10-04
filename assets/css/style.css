@@ -265,3 +265,56 @@ input, textarea {
 }
 button {
   padding:
+/* ===========================
+   HERO / BOOKS HEADER FIXES
+   =========================== */
+
+/* Force Cinzel on hero/landing page headers */
+.hero-text h1,
+.hero-text h2,
+.book-content h1,
+.book-content h2 {
+  font-family: 'Cinzel', serif !important;
+  color: var(--accent); /* tiger orange */
+}
+
+/* Optional: tagline stays Poppins for contrast */
+.hero-text p,
+.book-blurb p {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===========================
+   DARKER CINEMATIC BORDER
+   =========================== */
+
+/* If your hero/parallax overlay was creating a white border effect,
+   this ensures it blends into black instead */
+.parallax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.75),  /* darker black overlay */
+    rgba(0,0,0,0.75)
+  );
+  z-index: 0;
+}
+
+/* For sections that had a white background (cards, intro, featured),
+   swap to charcoal/black */
+.intro,
+.book-card,
+.featured-books,
+.site-footer,
+.site-header {
+  background: var(--card-bg); /* charcoal gray */
+  color: var(--fg);
+}
+
+/* If you want the absolute darkest look, force pure black */
+body,
+.site-footer,
+.site-header {
+  background-color: #0d0d0d;
+}
