@@ -313,38 +313,28 @@ h3 { font-size: 1.5rem; font-weight: 600; }
    HEADER NAVIGATION (Sticky + Tiger stripe overlay)
    =========================== */
 .site-header {
-  position: fixed;
+  position: fixed; /* keep it pinned */
   top: 0;
+  width: 100%;
   z-index: 1000;
   display: flex;
-  flex-direction: column; /* logo above nav */
+  flex-direction: column;
   align-items: center;
   padding: 1rem 0;
-
-  background: rgba(13, 13, 13, 0.85);
+  background: linear-gradient(to bottom, #1c1c1c, #2b2b2b); /* dark charcoal gradient */
   backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(255,255,255,0.1);
-
-  /* Subtle tiger stripes overlay for the header background */
-  position: relative;
   overflow: hidden;
 }
+
 .site-header::before {
   content: "";
   position: absolute;
   inset: 0;
-  opacity: 0.18; /* subtle */
-  background-image: repeating-linear-gradient(
-    135deg,
-    var(--tiger-deep) 0%,
-    var(--tiger-orange) 8%,
-    var(--tiger-amber) 16%,
-    var(--tiger-gold) 24%,
-    var(--tiger-orange) 32%
-  );
-  background-size: 24px 24px;
-  animation: tigerStripeShift 10s linear infinite;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 3px 3px; /* density of “snow” */
+  opacity: 0.15;
+  animation: snowDrift 20s linear infinite;
   pointer-events: none;
 }
 
@@ -496,32 +486,23 @@ button:hover { transform: translateY(-2px) scale(1.02); }
    FOOTER STYLING
    =========================== */
 .site-footer {
-  background: rgba(13, 13, 13, 0.85);
+  background: linear-gradient(to top, #1c1c1c, #2b2b2b);
   backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
   padding: 2rem 1rem;
   text-align: center;
   border-top: 1px solid rgba(255,255,255,0.1);
-
   position: relative;
   overflow: hidden;
 }
-/* Subtle tiger overlay like header */
+
 .site-footer::before {
   content: "";
   position: absolute;
   inset: 0;
-  opacity: 0.14;
-  background-image: repeating-linear-gradient(
-    135deg,
-    var(--tiger-deep) 0%,
-    var(--tiger-orange) 8%,
-    var(--tiger-amber) 16%,
-    var(--tiger-gold) 24%,
-    var(--tiger-orange) 32%
-  );
-  background-size: 24px 24px;
-  animation: tigerStripeShift 12s linear infinite;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.12;
+  animation: snowDrift 25s linear infinite;
   pointer-events: none;
 }
 
