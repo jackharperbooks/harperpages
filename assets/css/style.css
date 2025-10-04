@@ -25,7 +25,7 @@
    GLOBAL TYPOGRAPHY & BODY
    =========================== */
 body {
-  padding-top: 80px; /* adjust to match your header’s actual height */
+  padding-top: 120px; /* adjust to match your header’s actual height */
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: var(--bg);
@@ -118,7 +118,7 @@ h3 { font-size: 1.5rem; font-weight: 600; }
    PARALLAX (Desktop + Mobile)
    =========================== */
 .parallax {
-  padding-top: 80px; /* match or slightly exceed your header height */
+  padding-top: 120px; /* match or slightly exceed your header height */
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
