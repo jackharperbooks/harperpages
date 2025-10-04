@@ -117,7 +117,7 @@ h3 { font-size: 1.5rem; font-weight: 600; }
    PARALLAX (Desktop + Mobile)
    =========================== */
 .parallax {
-  padding-top: 180px; /* match or slightly exceed your header height */
+  padding-top: 200px; /* match or slightly exceed your header height */
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
