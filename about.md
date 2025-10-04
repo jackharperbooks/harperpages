@@ -10,6 +10,7 @@ permalink: /about/
        style="width: 300px; aspect-ratio: 3/4; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;">
 
   <!-- Intro Paragraph -->
+  <h2>About Jack Harper</h2>
   <p>
     Hey, I'm Jack! You may also call me "Jacques" if you're feeling swanky. I fancy that. 
     As a matter of fact, the rules here in my domain are <strong>"live wild and free."</strong> 
