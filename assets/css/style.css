@@ -30,15 +30,15 @@ body {
   background: var(--bg);
   color: var(--fg);
   line-height: 1.6;
+
+  /* NEW: offset all content below fixed header */
+  padding-top: 80px; /* adjust to match header height */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /* Poppins fallback per request */
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   margin-top: 0;
-
-  /* Tiger stripe animated gradient applied to headings */
   background-image:
     linear-gradient(120deg, rgba(255,255,255,0.08), rgba(255,255,255,0.0)),
     repeating-linear-gradient(
@@ -57,12 +57,10 @@ h1, h2, h3, h4, h5, h6 {
   animation: tigerStripeShift 8s linear infinite, tigerShimmer 3s ease-in-out infinite;
 }
 
-/* Preserve your original type scale */
 h1 { font-size: 2.5rem; letter-spacing: -1px; }
 h2 { font-size: 2rem;  font-weight: 600; }
 h3 { font-size: 1.5rem; font-weight: 600; }
 
-/* Jiggle animation for hero tagline (unchanged) */
 @keyframes jiggle {
   0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(2deg); }
@@ -82,18 +80,14 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   50%  { background-position: 100% 50%, 24px 24px; }
   100% { background-position: 0% 50%, 0 0; }
 }
-
 @keyframes tigerShimmer {
   0%, 100% { filter: drop-shadow(0 0 0 rgba(249,168,37,0)); }
   50%      { filter: drop-shadow(0 0 12px rgba(249,168,37,0.35)); }
 }
-
 @keyframes pulseGlow {
   0%, 100% { box-shadow: 0 6px 20px rgba(245,124,0,0.25); }
   50%      { box-shadow: 0 8px 26px rgba(249,168,37,0.35); }
 }
-
-/* Utility: apply tiger gradient to text explicitly when needed */
 .tiger-gradient-text {
   background-image:
     linear-gradient(120deg, rgba(255,255,255,0.08), rgba(255,255,255,0.0)),
@@ -117,7 +111,7 @@ h3 { font-size: 1.5rem; font-weight: 600; }
    PARALLAX (Desktop + Mobile)
    =========================== */
 .parallax {
-  padding-top: 200px; /* match or slightly exceed your header height */
+  /* REMOVED: padding-top: 200px; */
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -127,12 +121,9 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   align-items: center;
   justify-content: center;
   position: relative;
-
   animation: nudge 12s ease-in-out infinite;
   transition: transform 0.6s ease;
 }
-
-/* Overlay gradient for readability — slightly lighter opacity per request */
 .parallax::before {
   content: "";
   position: absolute;
@@ -143,8 +134,6 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   );
   z-index: 0;
 }
-
-/* Ensure hero text sits above overlay */
 .hero-text {
   position: relative;
   z-index: 1;
@@ -153,18 +142,12 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   padding: 2rem;
   border-radius: 8px;
 }
-
-/* Hover/tap lift effect */
 .parallax:hover { transform: scale(1.03) translateY(-5px); }
-
-/* Gentle background drift */
 @keyframes nudge {
   0%   { background-position: center top; }
   50%  { background-position: center calc(50% + 15px); }
   100% { background-position: center top; }
 }
-
-/* Tablet & small laptop adjustments */
 @media (max-width: 768px) {
   .parallax {
     height: 60vh;
@@ -173,8 +156,6 @@ h3 { font-size: 1.5rem; font-weight: 600; }
     background-size: cover;
   }
 }
-
-/* Extra-small phones */
 @media (max-width: 480px) {
   .parallax { height: 50vh; background-position: top center; }
   .hero-text { padding: 1rem; font-size: 0.9rem; }
@@ -199,39 +180,29 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   padding: 3rem 2rem;
   align-items: flex-start;
 }
-
-/* Force tiger headings consistency in hero/book areas */
 .hero-text h1, .hero-text h2,
 .book-content h1, .book-content h2 {
   font-family: 'Cinzel', 'Poppins', sans-serif;
 }
-
-/* Cover glow with tiger vibe */
 .book-cover {
   max-width: 300px;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(245,124,0,0.35);
 }
-
-.book-blurb {
-  flex: 1;
-  min-width: 250px;
-}
+.book-blurb { flex: 1; min-width: 250px; }
 
 /* ===========================
-   DOWNLOAD BUTTON (Tiger gradient)
+   DOWNLOAD BUTTON
    =========================== */
 .download-btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.25rem;
   text-decoration: none;
-  border-radius: 30px; /* pill shape */
+  border-radius: 30px;
   font-weight: bold;
   transition: transform 0.2s ease;
-
-  /* Animated tiger stripe background */
-  color: #0d0d0d; /* dark text for contrast on bright gradient */
+  color: #0d0d0d;
   background-image:
     linear-gradient(120deg, rgba(255,255,255,0.10), rgba(255,255,255,0.0)),
     repeating-linear-gradient(
@@ -246,10 +217,8 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   background-position: 0% 50%, 0 0;
   animation: tigerStripeShift 8s linear infinite, pulseGlow 3s ease-in-out infinite;
 }
-.download-btn:hover {
-  transform: translateY(-2px) scale(1.02);
-}
-
+.download-btn:hover { transform: translateY(-2px) scale(1.02); 
+                     
 /* ===========================
    BOOKS INDEX GRID
    =========================== */
