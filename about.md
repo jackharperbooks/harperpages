@@ -35,7 +35,12 @@ permalink: /about/
 
   <details>
     <summary>Why offer your books for free? <span class="icon">+</span></summary>
-    <p>Because freedom tastes better when it’s not behind a paywall.</p>
+    <p>Because dignity matters more than dollars.
+I watched the MM romance market get swallowed by outsiders chasing tropes and paychecks. I refused to play that game.</p>
+<p>My stories come from lived experience, not fetishization.</p>
+<p>If I put a price tag on them, I’d be complicit in the same system that drowns out authentic queer voices.
+So I flipped the script. No gatekeepers. No reviews. No storefronts. Just me, my words, and you. Free forever.</p>
+<p>Because our stories aren’t commodities—they’re connections.</p>
   </details>
 
    <details>
