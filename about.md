@@ -118,3 +118,57 @@ So I flipped the script. No gatekeepers. No reviews. No storefronts. Just me, my
 
   
 </div>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://jackharperbooks.github.io/harperpages#author",
+      "name": "Author Jack Harper",
+      "url": "https://jackharperbooks.github.io/harperpages",
+      "image": "https://jackharperbooks.github.io/harperpages/assets/images/about-placeholder.jpg",
+      "description": "Jack Harper is a queer fiction author whose work blends mythic resonance, emotional voltage, and ritual storytelling. Their novels are released free on HarperPages as offerings rather than commodities.",
+      "sameAs": [
+        "https://www.goodreads.com/authorjackharper",
+        "https://jackharperbooks.github.io/harperpages",
+        "https://www.instagram.com/thejackharper/"
+      ]
+    },
+    {
+      "@type": "Book",
+      "name": "Distance Between Him: The Crossroads Edition",
+      "author": {
+        "@id": "https://jackharperbooks.github.io/harperpages#author"
+      },
+      "genre": [
+        "MM Romance",
+        "Propulsive Drama",
+        "Age Gap Romance",
+        "Daddy/boy",
+        "Queer Fiction"
+      ],
+      "description": "A high-angst MM romance when love outlives the body, memory becomes the battlefield....",
+      "url": "https://jackharperbooks.github.io/harperpages/books/dbhx",
+      "image": "https://jackharperbooks.github.io/harperpages/assets/images/dbhx-cover.jpg",
+      "inLanguage": "en",
+      "datePublished": "2023-10-17",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://jackharperbooks.github.io/harperpages/books/dbhx"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Jack Harper"
+      },
+      "keywords": "free gay romance, MM romance, Daddy/boy, Age Gap Romance, queer fiction"
+    }
+  ]
+}
+</script>
