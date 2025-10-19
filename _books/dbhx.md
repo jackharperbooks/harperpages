@@ -25,7 +25,7 @@ Set between the rural South and the electric pulse of New York City, Distance Be
     "name": "Jack Harper"
   },
   "genre": ["MM Romance", "Propulsive Drama", "Age Gap Romance", "Daddy/boy", "Queer Fiction"],
-  "description": "“A high‑angst MM romance where a broken man and a fire captain ignite a love fierce enough to burn through the past. - Totally free to read online.",
+  "description": "“A high‑angst MM romance when love outlives the body, memory becomes the battlefield.... - Totally free to read online.",
   "url": "https://jackharperbooks.github.io/harperpages/books/dbhx",
   "image": "https://jackharperbooks.github.io/harperpages/assets/images/dbhx-cover.jpg",
   "bookFormat": "EBook",
