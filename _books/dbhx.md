@@ -14,3 +14,35 @@ As a boy, Grayson knew his father’s disapproval would shadow every step he too
 Now, thirty years later, grief drags Grayson home to face the family he left behind and the funeral he never wanted to plan. A suitcase of Julian’s journals becomes his lifeline, pulling him through memories of secret glances, rain‑soaked confessions, and vows shouted against the Atlantic surf. Each page reminds him of what they survived—and what still waits to be reconciled.
 
 Set between the rural South and the electric pulse of New York City, Distance Between Him is a sweeping, grief‑struck love story where memory collides with legacy, and devotion proves stronger than the grave.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Distance Between Him: The Crossroads Edition",
+  "author": {
+    "@type": "Person",
+    "name": "Jack Harper"
+  },
+  "genre": ["MM Romance", "Propulsive Drama", "Age Gap Romance", "Daddy/boy", "Queer Fiction"],
+  "description": "“A high‑angst MM romance where a broken man and a fire captain ignite a love fierce enough to burn through the past. - Totally free to read online.",
+  "url": "https://jackharperbooks.github.io/harperpages/books/dbhx",
+  "image": "https://jackharperbooks.github.io/harperpages/assets/images/dbhx-cover.jpg",
+  "bookFormat": "EBook",
+  "inLanguage": "en",
+  "datePublished": "2025-10-17",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://jackharperbooks.github.io/harperpages/books/dbhx"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HarperPages"
+  },
+  "keywords": "free gay romance, MM romance, Daddy/boy, Age Gap Romance, paranormal romance, fated mates, Hurt/comfort romance, queer love story, steamy gay fiction, emotionally charged fiction, romcom,"
+}
+</script>
