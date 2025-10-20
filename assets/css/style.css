@@ -22,6 +22,46 @@
 }
 
 /* ===========================
+   BUTTONS (Glittery Orange Effect)
+   =========================== */
+.download-btn,
+.nav-btn,
+button,
+.small-btn {
+  color: #0d0d0d; /* dark text for contrast */
+  background-image: linear-gradient(
+    90deg,
+    var(--tiger-deep),
+    var(--tiger-orange),
+    var(--tiger-amber),
+    var(--tiger-gold),
+    var(--tiger-orange)
+  );
+  background-size: 300% 100%;
+  animation: glitterFlow 3s ease-in-out infinite;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Hover lift */
+.download-btn:hover,
+.nav-btn:hover,
+button:hover,
+.small-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* Unique tweaks preserved */
+.download-btn { margin-top: 1rem; padding: 0.75rem 1.25rem; }
+.nav-btn { padding: 0.6rem 1.2rem; font-weight: 600; }
+button { padding: 0.75rem 1.25rem; border: none; }
+.small-btn { padding: 0.4rem 0.6rem; font-size: 0.9rem; border-radius: 50%; line-height: 1; }
+
+/* ===========================
    GLOBAL TYPOGRAPHY & BODY
    =========================== */
 body {
@@ -73,6 +113,13 @@ h3 { font-size: 1.5rem; font-weight: 600; }
 .hero-tagline {
   display: inline-block;
   animation: jiggle 1s ease-in-out infinite;
+}
+@keyframes glitterFlow {
+  0%   { background-position: 0% 50%; box-shadow: 0 0 10px rgba(255,168,37,0.4); }
+  25%  { background-position: 50% 50%; box-shadow: 0 0 20px rgba(255,168,37,0.6); }
+  50%  { background-position: 100% 50%; box-shadow: 0 0 30px rgba(255,168,37,0.8); }
+  75%  { background-position: 50% 50%; box-shadow: 0 0 20px rgba(255,168,37,0.6); }
+  100% { background-position: 0% 50%; box-shadow: 0 0 10px rgba(255,168,37,0.4); }
 }
 
 /* ===========================
@@ -219,48 +266,6 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   min-width: 250px;
 }
 
-/* ===========================
-   DOWNLOAD BUTTON (Tiger gradient)
-   =========================== */
-.download-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.25rem;
-  text-decoration: none;
-  border-radius: 30px; /* pill shape */
-  font-weight: bold;
-  transition: transform 0.2s ease;
-
-  /* Animated tiger stripe background */
-  color: #0d0d0d; /* dark text for contrast on bright gradient */
-  background-image:
-    linear-gradient(120deg, rgba(255,255,255,0.10), rgba(255,255,255,0.0)),
-    repeating-linear-gradient(
-      45deg,
-      var(--tiger-deep) 0%,
-      var(--tiger-orange) 8%,
-      var(--tiger-amber) 16%,
-      var(--tiger-gold) 24%,
-      var(--tiger-orange) 32%
-    );
-  background-size: 200% 200%, 24px 24px;
-  background-position: 0% 50%, 0 0;
-  animation: tigerStripeShift 8s linear infinite, pulseGlow 3s ease-in-out infinite;
-}
-.download-btn:hover {
-  transform: translateY(-2px) scale(1.02);
-}
-
-/* ===========================
-   BOOKS INDEX GRID
-   =========================== */
-.books-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
 .book-card {
   background: var(--card-bg);
   padding: 1rem;
@@ -342,31 +347,6 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   justify-content: center; /* centered under the logo */
   flex-wrap: wrap;
 }
-
-.nav-btn {
-  padding: 0.6rem 1.2rem;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: transform 0.2s ease;
-
-  color: #0d0d0d; /* dark text on bright gradient */
-  background-image:
-    linear-gradient(120deg, rgba(255,255,255,0.10), rgba(255,255,255,0.0)),
-    repeating-linear-gradient(
-      45deg,
-      var(--tiger-deep) 0%,
-      var(--tiger-orange) 8%,
-      var(--tiger-amber) 16%,
-      var(--tiger-gold) 24%,
-      var(--tiger-orange) 32%
-    );
-  background-size: 200% 200%, 24px 24px;
-  background-position: 0% 50%, 0 0;
-  animation: tigerStripeShift 8s linear infinite, pulseGlow 3s ease-in-out infinite;
-}
-
-.nav-btn:hover { transform: translateY(-2px) scale(1.02); }
 
 /* ===========================
    FAQ SECTION on ABOUT PAGE
@@ -469,13 +449,7 @@ button {
 }
 button:hover { transform: translateY(-2px) scale(1.02); }
 
-/* Tiny toggle button */
-.small-btn {
-  padding: 0.4rem 0.6rem;
-  font-size: 0.9rem;
-  border-radius: 50%;
-  line-height: 1;
-}
+
 
 /* ===========================
    FOOTER STYLING
