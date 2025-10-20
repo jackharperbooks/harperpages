@@ -476,3 +476,22 @@ button:hover { transform: translateY(-2px) scale(1.02); }
 }
 
 .footer-copy { font-size: 0.85rem; color: var(--muted); }
+
+/* Reassert Books page grid without affecting other components */
+.books-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  gap: 2rem !important;
+  margin-top: 2rem;
+}
+
+.books-grid > .book-card {
+  width: auto;
+}
+
+.books-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
