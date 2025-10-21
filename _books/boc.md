@@ -30,7 +30,7 @@ A romantic comedy about chasing dreams, falling hard, and learning that the only
     "name": "Jack Harper"
   },
   "genre": ["MM Romance", "Gay Romance", "Age Gap Romance", "Romcom", "Queer Fiction"],
-  "description": "A steamy, campy gay romcom set in New York City. Literary adaptation of the blockbuster with Amy Schumer, I Feel Pretty - Totally free to read online.",
+  "description": "A steamy, campy gay romcom set in New York City. Literary adaptation of the blockbuster with Amy Schumer, \"I Feel Pretty\" - Totally free to read online.",
   "url": "https://jackharperbooks.github.io/harperpages/books/boc",
   "image": "https://jackharperbooks.github.io/harperpages/assets/images/boc-cover.jpg",
   "bookFormat": "EBook",
@@ -48,6 +48,7 @@ A romantic comedy about chasing dreams, falling hard, and learning that the only
     "@type": "Organization",
     "name": "HarperPages"
   },
-  "keywords": "free gay romance, MM romance, Daddy/boy, Age Gap Romance, paranormal romance, fated mates, Hurt/comfort romance, queer love story, steamy gay fiction, emotionally charged fiction, romcom,"
+  "keywords": "free gay romance, MM romance, Daddy/boy, Age Gap Romance, paranormal romance, fated mates, Hurt/comfort romance, queer love story, steamy gay fiction, emotionally charged fiction, romcom"
 }
 </script>
+
