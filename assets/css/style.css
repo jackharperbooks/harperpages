@@ -1,30 +1,34 @@
 /* ===========================
    COLOR PALETTES
+   Switch aesthetics by commenting/uncommenting
    =========================== */
 
+/* --- Tiger / Cinematic (ACTIVE) --- */
 :root {
-  --bg: #0d0d0d;
-  --fg: #ffaf59;
-  --card-bg: #2b2b2b;
-  --muted: #aaaaaa;
+  --bg: #0d0d0d;           /* deep black */
+  --fg: #ffaf59;           /* bright orange-ish text */
+  --card-bg: #2b2b2b;      /* charcoal for cards/sections */
+  --muted: #aaaaaa;        /* muted gray */
 
+  /* Tiger hues (used by animated gradients) */
   --tiger-orange: #f57c00;
   --tiger-gold: #f9a825;
   --tiger-amber: #ff9800;
   --tiger-deep: #e65100;
 
+  /* Fallback accent colors (used if gradients aren’t supported) */
   --accent: var(--tiger-orange);
   --accent-hover: var(--tiger-gold);
 }
 
 /* ===========================
-   BUTTONS
+   BUTTONS (Glittery Orange Effect)
    =========================== */
 .download-btn,
 .nav-btn,
 button,
 .small-btn {
-  color: #0d0d0d;
+  color: #0d0d0d; /* dark text for contrast */
   background-image: linear-gradient(
     90deg,
     var(--tiger-deep),
@@ -42,12 +46,16 @@ button,
   display: inline-block;
   cursor: pointer;
 }
+
+/* Hover lift */
 .download-btn:hover,
 .nav-btn:hover,
 button:hover,
 .small-btn:hover {
   transform: translateY(-3px) scale(1.05);
 }
+
+/* Unique tweaks preserved */
 .download-btn { margin-top: 1rem; padding: 0.75rem 1.25rem; }
 .nav-btn { padding: 0.6rem 1.2rem; font-weight: 600; }
 button { padding: 0.75rem 1.25rem; border: none; }
@@ -57,7 +65,7 @@ button { padding: 0.75rem 1.25rem; border: none; }
    GLOBAL TYPOGRAPHY & BODY
    =========================== */
 body {
-  padding-top: 275px;
+  padding-top: 275px; /* adjust to match your header’s actual height */
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: var(--bg);
@@ -100,12 +108,95 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   border-right: 2px solid var(--tiger-gold);
 }
 
+  /* Tiger stripe animated gradient applied to headings */
+  background-image:
+    linear-gradient(120deg, rgba(255,255,255,0.08), rgba(255,255,255,0.0)),
+    repeating-linear-gradient(
+      45deg,
+      var(--tiger-deep) 0%,
+      var(--tiger-orange) 8%,
+      var(--tiger-amber) 16%,
+      var(--tiger-gold) 24%,
+      var(--tiger-orange) 32%
+    );
+  background-size: 200% 200%, 24px 24px;
+  background-position: 0% 50%, 0 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: tigerStripeShift 8s linear infinite, tigerShimmer 3s ease-in-out infinite;
+}
+
+/* Preserve your original type scale */
+h1 { font-size: 2.5rem; letter-spacing: -1px; }
+h2 { font-size: 2rem;  font-weight: 600; }
+h3 { font-size: 1.5rem; font-weight: 600; }
+
+/* Jiggle animation for hero tagline (unchanged) */
+@keyframes jiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform: rotate(1deg); }
+}
+.hero-tagline {
+  display: inline-block;
+  animation: jiggle 1s ease-in-out infinite;
+}
+@keyframes glitterFlow {
+  0%   { background-position: 0% 50%; box-shadow: 0 0 10px rgba(255,168,37,0.4); }
+  25%  { background-position: 50% 50%; box-shadow: 0 0 20px rgba(255,168,37,0.6); }
+  50%  { background-position: 100% 50%; box-shadow: 0 0 30px rgba(255,168,37,0.8); }
+  75%  { background-position: 50% 50%; box-shadow: 0 0 20px rgba(255,168,37,0.6); }
+  100% { background-position: 0% 50%; box-shadow: 0 0 10px rgba(255,168,37,0.4); }
+}
+
 /* ===========================
-   PARALLAX (restored)
+   TIGER AESTHETIC ANIMATIONS
+   =========================== */
+@keyframes tigerStripeShift {
+  0%   { background-position: 0% 50%, 0 0; }
+  50%  { background-position: 100% 50%, 24px 24px; }
+  100% { background-position: 0% 50%, 0 0; }
+}
+
+@keyframes tigerShimmer {
+  0%, 100% { filter: drop-shadow(0 0 0 rgba(249,168,37,0)); }
+  50%      { filter: drop-shadow(0 0 12px rgba(249,168,37,0.35)); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 6px 20px rgba(245,124,0,0.25); }
+  50%      { box-shadow: 0 8px 26px rgba(249,168,37,0.35); }
+}
+
+/* Utility: apply tiger gradient to text explicitly when needed */
+.tiger-gradient-text {
+  background-image:
+    linear-gradient(120deg, rgba(255,255,255,0.08), rgba(255,255,255,0.0)),
+    repeating-linear-gradient(
+      45deg,
+      var(--tiger-deep) 0%,
+      var(--tiger-orange) 8%,
+      var(--tiger-amber) 16%,
+      var(--tiger-gold) 24%,
+      var(--tiger-orange) 32%
+    );
+  background-size: 200% 200%, 24px 24px;
+  background-position: 0% 50%, 0 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: tigerStripeShift 8s linear infinite, tigerShimmer 3s ease-in-out infinite;
+}
+
+/* ===========================
+   PARALLAX (Desktop + Mobile)
    =========================== */
 .parallax {
-  height: 100vh;                  /* ✨ restored full viewport height */
-  background-attachment: fixed;   /* ✨ restored floating effect */
+  padding-top: 120px; /* match or slightly exceed your header height */
+  height: 100vh;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,9 +204,12 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   align-items: center;
   justify-content: center;
   position: relative;
+
+  animation: nudge 12s ease-in-out infinite;
+  transition: transform 0.6s ease;
 }
 
-/* Overlay for readability */
+/* Overlay gradient for readability — slightly lighter opacity per request */
 .parallax::before {
   content: "";
   position: absolute;
@@ -126,6 +220,8 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   );
   z-index: 0;
 }
+
+/* Ensure hero text sits above overlay */
 .hero-text {
   position: relative;
   z-index: 1;
@@ -135,12 +231,257 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   border-radius: 8px;
 }
 
-/* ===========================
-   (…all your existing book cards, featured books, header, footer, etc. remain unchanged…)
-   =========================== */
+/* Hover/tap lift effect */
+.parallax:hover { transform: scale(1.03) translateY(-5px); }
+
+/* Gentle background drift */
+@keyframes nudge {
+  0%   { background-position: center top; }
+  50%  { background-position: center calc(50% + 15px); }
+  100% { background-position: center top; }
+}
+
+/* Tablet & small laptop adjustments */
+@media (max-width: 768px) {
+  .parallax {
+    height: 60vh;
+    background-attachment: scroll;
+    background-position: top center;
+    background-size: cover;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 480px) {
+  .parallax { height: 50vh; background-position: top center; }
+  .hero-text { padding: 1rem; font-size: 0.9rem; }
+}
 
 /* ===========================
-   FOOTER
+   INTRO SECTION
+   =========================== */
+.intro {
+  padding: 3rem 2rem;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* ===========================
+   BOOK LANDING PAGE CONTENT
+   =========================== */
+.book-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  align-items: flex-start;
+}
+
+/* Force tiger headings consistency in hero/book areas */
+.hero-text h1, .hero-text h2,
+.book-content h1, .book-content h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Cover glow with tiger vibe */
+.book-cover {
+  max-width: 300px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(245,124,0,0.35);
+}
+
+.book-blurb {
+  flex: 1;
+  min-width: 250px;
+}
+
+.book-card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+.book-card:hover { transform: translateY(-5px); }
+.book-card img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.book-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+.book-card p { font-size: 0.9rem; color: var(--muted); }
+.subscribe-cta { margin-top: 2rem; text-align: center; }
+
+/* ===========================
+   FEATURED BOOKS SECTION
+   =========================== */
+.featured-books {
+  margin: 4rem 0;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+.featured-card img {
+  max-width: 200px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(245,124,0,0.35);
+  margin-bottom: 1rem;
+}
+.featured-info { color: var(--fg); }
+.featured-info h3 { margin: 0 0 0.5rem; }
+
+/* ===========================
+   HEADER NAVIGATION (Sticky + Tiger stripe overlay)
+   =========================== */
+.site-header {
+  position: fixed; /* stays at top */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+
+  /* Clean opaque charcoal gradient */
+  background: linear-gradient(to bottom, #1c1c1c, #2b2b2b);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.site-header::before {
+  content: none; /* remove animated overlay */
+}
+
+/* ===========================
+   NAVIGATION BUTTONS (Tiger gradient)
+   =========================== */
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* centered under the logo */
+  flex-wrap: wrap;
+}
+
+/* ===========================
+   FAQ SECTION on ABOUT PAGE
+   =========================== */
+.faq-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.faq-section details {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #444;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  max-height: 2.5em;
+  padding-bottom: 0;
+}
+
+.faq-section details[open] {
+  max-height: 3000px;
+  padding-bottom: 0.5rem;
+}
+
+.faq-section summary {
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-section summary::-webkit-details-marker { display: none; }
+.faq-section .icon { display: inline-block; transition: transform 0.3s ease; }
+.faq-section details[open] .icon { transform: rotate(45deg); }
+
+/* Answer text animation */
+.faq-section details p { opacity: 0; transform: translateY(10px); }
+.faq-section details[open] p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.faq-section details[open] p:nth-of-type(1) { transition-delay: 0.1s; }
+.faq-section details[open] p:nth-of-type(2) { transition-delay: 0.25s; }
+.faq-section details[open] p:nth-of-type(3) { transition-delay: 0.4s; }
+.faq-section details[open] p:nth-of-type(4) { transition-delay: 0.55s; }
+
+.ug-review-text {
+  /* Keep visual emphasis but align with tiger hues */
+  color: var(--tiger-orange);
+  font-style: italic;
+  border-left: 4px solid var(--tiger-orange);
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+/* ===========================
+   CONTACT FORM STYLING
+   =========================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+}
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #222;
+  color: var(--fg);
+}
+
+/* Buttons use the same tiger animated background */
+button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  color: #0d0d0d;
+  background-image:
+    linear-gradient(120deg, rgba(255,255,255,0.10), rgba(255,255,255,0.0)),
+    repeating-linear-gradient(
+      45deg,
+      var(--tiger-deep) 0%,
+      var(--tiger-orange) 8%,
+      var(--tiger-amber) 16%,
+      var(--tiger-gold) 24%,
+      var(--tiger-orange) 32%
+    );
+  background-size: 200% 200%, 24px 24px;
+  background-position: 0% 50%, 0 0;
+  animation: tigerStripeShift 8s linear infinite, pulseGlow 3s ease-in-out infinite;
+}
+button:hover { transform: translateY(-2px) scale(1.02); }
+
+
+
+/* ===========================
+   FOOTER STYLING
    =========================== */
 .site-footer {
   background: linear-gradient(to top, #1c1c1c, #2b2b2b);
@@ -148,7 +489,13 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   text-align: center;
   border-top: 1px solid rgba(255,255,255,0.08);
 }
+
+.site-footer::before {
+  content: none; /* remove animated overlay */
+}
+
 .footer-logo { max-height: 50px; margin-bottom: 1rem; }
+
 .footer-nav {
   display: flex;
   justify-content: center;
@@ -156,8 +503,26 @@ h3 { font-size: 1.5rem; font-weight: 600; }
   flex-wrap: wrap;
   margin-bottom: 1rem;
 }
+
 .footer-copy { font-size: 0.85rem; color: var(--muted); }
 
+/* Reassert Books page grid without affecting other components */
+.books-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  gap: 2rem !important;
+  margin-top: 2rem;
+}
+
+.books-grid > .book-card {
+  width: auto;
+}
+
+.books-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /* ===========================
    ✨ NEW: Rainbow overlay
    =========================== */
